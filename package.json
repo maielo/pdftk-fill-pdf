@@ -1,0 +1,32 @@
+{
+  "name": "pdftk-fill-pdf",
+  "version": "1.0.0",
+  "description": "fill pdf forms with supplied data",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maielo/pdftk-fill-pdf.git"
+  },
+  "keywords": [
+    "pdftk",
+    "pdf",
+    "fill"
+  ],
+  "author": "maielo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maielo/pdftk-fill-pdf/issues"
+  },
+  "homepage": "https://github.com/maielo/pdftk-fill-pdf#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.20",
+    "xmlbuilder": "^15.1.1"
+  }
+}

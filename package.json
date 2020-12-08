@@ -1,6 +1,6 @@
 {
   "name": "pdftk-fill-pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fill pdf forms with supplied data",
   "main": "index.js",
   "directories": {

@@ -1,0 +1,64 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch --onSuccess \"node ./dist/index.js\"",
+    "customtest": "npx nodemon test/test.js",
+    "build": "tsdx build --target node",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build --target node",
+    "np:publish": "git push origin master && np --no-tests --no-2fa",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "node-ts-template",
+  "module": "dist/node-ts-template.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/node-ts-template.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/node-ts-template.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.10.1",
+    "husky": "^5.1.3",
+    "size-limit": "^4.10.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3",
+    "i": "^0.3.6",
+    "nodemon": "^2.0.7"
+  },
+  "author": "Maielo",
+  "keywords": [
+    "ts",
+    "typescript",
+    "async",
+    "node"
+  ]
+}

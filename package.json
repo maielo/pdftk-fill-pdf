@@ -45,6 +45,10 @@
       "limit": "10 KB"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maielo/pdftk-fill-pdf.git"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.1",
     "husky": "^5.1.3",

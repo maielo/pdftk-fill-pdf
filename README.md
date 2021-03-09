@@ -89,7 +89,7 @@ try {
     maxBuffer: 200 * 1024,
   };
   const cmd = `fill_form ${xfdfFile} output ${generatedPdfFile} need_appearances`;
-  const stdout = await pdfFill.generateXfdf(cmd, OPTIONS);
+  const stdout = await pdfFill.execPdftk(cmd, OPTIONS);
 } catch (err) {
   console.log(err);
 }

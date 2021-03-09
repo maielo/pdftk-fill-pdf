@@ -1,6 +1,6 @@
 # pdftk-fill-pdf
 
-You MUST to have installed `pdftk` (https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
+[PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) is required
 
 - fills special characters in native language (except Asian, Arabian) ✔️
 - fills multiple form fields using same acrofield name ✔️

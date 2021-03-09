@@ -1,5 +1,6 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.2",
+  "description": "fill pdf forms with supplied data",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -32,15 +33,15 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "node-ts-template",
-  "module": "dist/node-ts-template.esm.js",
+  "name": "pdftk-fill-pdf",
+  "module": "dist/pdftk-fill-pdf.esm.js",
   "size-limit": [
     {
-      "path": "dist/node-ts-template.cjs.production.min.js",
+      "path": "dist/pdftk-fill-pdf.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/node-ts-template.esm.js",
+      "path": "dist/pdftk-fill-pdf.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -59,6 +60,13 @@
     "ts",
     "typescript",
     "async",
-    "node"
+    "node",
+    "pdf",
+    "fill",
+    "acroforms",
+    "pdf-forms",
+    "UTF8",
+    "pdftk",
+    "xfdf"
   ]
 }

@@ -1,20 +1,24 @@
 # pdftk-fill-pdf
 
+You MUST to have installed `pdftk` (https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
+
 - fills special characters in native language (except Asian, Arabian) ✔️
-- fills multiple form fields using same acro name ✔️
-- handles `undefined` and `null` values with empty string ✔️
-- all asynchronous to not blocking main thread ✔️
-- return `Buffer` ✔️
+- fills multiple form fields using same acrofield name ✔️
 - handles checkboxes ✔️
+- handles `undefined` and `null` values with empty string ✔️
+- all asynchronous ✔️
+- returns `Buffer` ✔️
 - lightweight and no dependencies ✔️
 - exposes `pdftk` and `xfdf` for customization ✔️
 - written in typescript ✔️
 
-## Usage
+#### Install
 
 ```
 npm i pdftk-fill-pdf
 ```
+
+## Examples
 
 #### basic usage
 

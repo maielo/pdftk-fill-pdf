@@ -5,8 +5,6 @@ import { promises as fsp } from 'fs';
 
 export type FillData = Record<string, string | number | boolean>;
 
-const TEMP = path.resolve('./temp');
-
 function _getRandomName() {
   return `file_${Math.round(Math.random() * 10000)}`;
 }
@@ -15,9 +13,11 @@ const pdfFill = {
   fill: async function({
     data,
     pdfPath,
+    tempPath,
   }: {
     data: FillData;
     pdfPath: string;
+    tempPath: string;
   }): Promise<Buffer> {
     if (!data || typeof data !== 'object') {
       throw new Error(
@@ -35,9 +35,10 @@ const pdfFill = {
     }
     const _xfdf = await this.generateXfdf({ data, pdfPath });
 
+    const pathToTemp = tempPath || path.resolve('./temp');
     const bulkRandomName = _getRandomName();
-    const xfdfFile = `${TEMP}${path.sep}${bulkRandomName}.xfdf`;
-    const generatedPdfFile = `${TEMP}${path.sep}${bulkRandomName}.pdf`;
+    const xfdfFile = `${pathToTemp}${path.sep}${bulkRandomName}.xfdf`;
+    const generatedPdfFile = `${pathToTemp}${path.sep}${bulkRandomName}.pdf`;
 
     // write xdfd for pdftk
     await fsp.writeFile(xfdfFile, _xfdf);

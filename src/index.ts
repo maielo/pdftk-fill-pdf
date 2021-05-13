@@ -17,7 +17,7 @@ const pdfFill = {
   }: {
     data: FillData;
     pdfPath: string;
-    tempPath: string;
+    tempPath?: string;
   }): Promise<Buffer> {
     if (!data || typeof data !== 'object') {
       throw new Error(

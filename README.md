@@ -46,6 +46,8 @@ try {
   const pdfBuffer = await pdfFill.fill({
     pdfPath: 'test/test.pdf',
     data: fillData,
+    // optional, temporary file path root
+    // tempPath: '/tmp',
   });
 
   // do with buffer whatever you want i.e. write it into file
@@ -67,7 +69,8 @@ const fillData = {
 try {
   const xfdfString = await pdfFill.generateXfdf({
     pdfPath: 'test/test.pdf', // used for correct Xfdf href
-    data: fillData, // same data as above
+    data: fillData, // same data as above,
+    // tempPath: '/tmp', // optional, temporary file path root
   });
 
   console.log(xfdfString);

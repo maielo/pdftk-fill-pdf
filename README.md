@@ -1,13 +1,16 @@
 # pdftk-fill-pdf
 
-[PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) is required
+![pdftk-fill-pdf](https://user-images.githubusercontent.com/8983870/239914588-bbc78028-d772-483a-80ec-42d3a4e4f8d0.png)
+
+Automate PDF Form Population with Node.js: Leveraging [PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) for Dynamic Form Filling and XFDF Generation
+
+[PDFtk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/) is required!
 
 - fills multiple form fields using same acrofield name ✔️
 - handles checkboxes ✔️
 - handles `undefined` and `null` values with empty string ✔️
 - all asynchronous ✔️
 - returns `Buffer` ✔️
-- lightweight and no dependencies ✔️
 - exposes `pdftk` and `xfdf` for customization ✔️
 - written in typescript ✔️
 
